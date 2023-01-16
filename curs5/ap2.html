@@ -10,15 +10,13 @@
 
 <body>
       <script>
-            const persoana = {
-                  nume: 'Popescu',
-                  prenume: 'Dan',
-                  telefon: '074444444'
+            function nrToChar(n) {
+                  return String.fromCharCode(n);
             }
-            console.log(persoana);
-
-            delete persoana.telefon;
-            console.log(persoana);
+            for (let i = 33; i <= 127; i++) {
+                  let char = nrToChar(i);
+                  console.log(`nr este ${i} caracterul este ${char}`)
+            }
       </script>
 </body>
 
