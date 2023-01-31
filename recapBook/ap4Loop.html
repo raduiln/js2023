@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+
+<body>
+
+      <p>These are JavaScript Arrays</p>
+      <p>I will use the for loop in the following code</p>
+      <p id="array-demo"></p>
+      <script>
+            // var carsforsale, msg, cLn, y;
+            // carsforsale = ["BMW", "Mitsubishi", "Honda", "Toyota"];
+            // cLn = carsforsale.length;
+            // msg = "<ul>";
+            // for (y = 0; y < cLn; y++) {
+            //       msg += "<li>" + carsforsale[y] + "</li>";
+            // }
+            // msg += "</ul>";
+            // document.getElementById("array-demo").innerHTML = msg;
+
+            var carsforsale, msg;
+            carsforsale = ["BMW", "Mitsubishi", "Honda", "Toyota"];
+            msg = "<ul>";
+            carsforsale.forEach(FunctionX);
+            msg += "</ul>"
+            document.getElementById("array-demo").innerHTML = msg;
+            function FunctionX(value) {
+                  msg += "<li>" + value + "</li>";
+            }
+      </script>
+
+</body>
+
+</html>
